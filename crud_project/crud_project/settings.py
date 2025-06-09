@@ -76,16 +76,15 @@ WSGI_APPLICATION = "crud_project.wsgi.application"
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tasksdb',
-        'USER': 'admin',
-        'PASSWORD': 'SecurePassword123!',
-        'HOST': '<rds-endpoint>',  # Will be updated after RDS setup
-        'PORT': '5432',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "django-db",
+        "USER": "postgresadmin",
+        "PASSWORD": "Vijval#767485!",
+        "HOST": "django-db.cb9v6gj5sqme.us-east-1.rds.amazonaws.com",  # Will be updated after RDS setup
+        "PORT": "5432",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
